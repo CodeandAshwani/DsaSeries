@@ -1,9 +1,8 @@
-
 import java.util.Scanner;
 
 public class Pattern2 {
-    static void print1(int n){
-        for(int i=0; i<=n;i++){
+    static void print2(int n){
+        for(int i=1;i<=n;i++){
             for(int j=1;j<=i;j++){
                 System.out.print(" *");
             }
@@ -17,7 +16,7 @@ public class Pattern2 {
         for(int i=1; i<=t;i++) {
             System.out.print("Enter the number of rows: ");
             int n = sc.nextInt();
-            print1(n);
+            print2(n);
         }
 
 
