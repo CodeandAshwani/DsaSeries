@@ -1,10 +1,7 @@
 import java.util.Scanner;
 
 public class Pattern8 {
-    static void main() {
-        Scanner sc= new Scanner(System.in);
-        System.out.println("Enter the number of rows");
-        int n= sc.nextInt();
+    static void Print8(int n) {
         for(int i=0;i<n;i++) {
             for (int j=0; j<i;j++) {
                 System.out.print(" ");
@@ -15,6 +12,15 @@ public class Pattern8 {
                 System.out.print(" ");
             }
             System.out.println("");
+        }
+    }
+    static void main(){
+        Scanner sc= new Scanner(System.in);
+        int t= sc.nextInt();
+        for(int i=1;i<=t;i++){
+            int n= sc.nextInt();
+            Print8(n);
+
         }
     }
 }
